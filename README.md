@@ -1,9 +1,8 @@
 BÁO CÁO KIỂM THỬ API
-Tên Dự Án: Test Collection of APIs
 
-Ngày Kiểm Thử: 24/05/2024
+Ngày Kiểm Thử: 28/05/2024
 
-Người Kiểm Thử: Giang Thành An
+Người Kiểm Thử: Nguyễn Ngọc Hoàng Anh
 
 1. Mục Tiêu Kiểm Thử: Sử dụng Postman để kiểm thử một API thực tế
 
