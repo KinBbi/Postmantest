@@ -4,13 +4,25 @@ Ngày Kiểm Thử: 28/05/2024
 
 Người Kiểm Thử: Nguyễn Ngọc Hoàng Anh
 
-1. Mục Tiêu Kiểm Thử: Sử dụng Postman để kiểm thử một API thực tế
+Mục Tiêu Kiểm Thử: Sử dụng Postman để kiểm thử một API thực tế
 
-2. Môi Trường Kiểm Thử: Postman.
+Môi Trường Kiểm Thử: Postman.
 
-3. Phương Pháp Kiểm Thử: Kiểm thử tự động và thủ công trên phần mềm Postman.
+Phương Pháp Kiểm Thử: Kiểm thử tự động và thủ công trên phần mềm Postman.
 
-4. Kịch Bản Kiểm Thử Lần 1:
+Giới thiệu Postman
+Postman là một công cụ phát triển API và kiểm thử API rất phổ biến. Nó cung cấp một giao diện đồ họa dễ sử dụng cho phép bạn tạo, gửi và kiểm tra các yêu cầu HTTP đối với các API.
+Các tính năng chính của Postman?
+Các tính năng chính của Postman bao gồm: +) Tạo yêu cầu HTTP: Postman cho phép bạn tạo các yêu cầu HTTP như GET, POST, PUT, DELETE và nhiều hơn nữa. Bạn có thể chỉ định các thông số như URL, tham số, tiêu đề, thân yêu cầu và xem các kết quả trả về. +) Quản lý môi trường: Bạn có thể quản lý các biến môi trường để tùy chỉnh các yêu cầu và phản hồi dựa trên các biến này. Điều này rất hữu ích khi bạn phải làm việc với nhiều môi trường như local, development, production, v.v. +) Tạo và chia sẻ bộ sưu tập (collection): Postman cho phép bạn tạo và tổ chức các yêu cầu vào các bộ sưu tập. Bạn có thể chia sẻ bộ sưu tập này với đồng đội hoặc cộng đồng để hỗ trợ cộng tác và tái sử dụng. +) Kiểm thử và xác thực: Postman cung cấp các công cụ để kiểm thử và xác thực API. Bạn có thể thực hiện các bài kiểm tra tự động, kiểm tra mô phỏng và kiểm tra hiệu năng để đảm bảo tính ổn định và chính xác của API.
+Cách cài đặt và sử dụng Postman?
+Cài đặt: Postman có phiên bản cho Windows, macOS và Linux. Bạn có thể tải xuống và cài đặt Postman từ trang web chính thức của nó: https://www.postman.com/downloads/
+Giao diện chính: Sau khi cài đặt, bạn sẽ thấy giao diện chính của Postman với các tab như "Collections", "History", "Environments", "Mocks" và "Runner".
+Tạo yêu cầu: Bạn có thể tạo yêu cầu bằng cách chọn phương thức HTTP (GET, POST, PUT, DELETE) và điền URL cần gửi yêu cầu. Bạn có thể thêm tiêu đề, tham số và thân yêu cầu tuỳ theo yêu cầu của API.
+Kiểm tra yêu cầu: Sau khi tạo yêu cầu, bạn có thể gửi yêu cầu và xem kết quả trả về từ API. Postman hiển thị các phản hồi trong cửa sổ "Response" và cho phép bạn xem thông tin chi tiết như mã trạng thái, tiêu đề và thân phản hồi.
+Quản lý môi trường: Bạn có thể tạo các biến môi trường và sử dụng chúng trong yêu cầu. Điều này giúp bạn tùy chỉnh các yêu cầu dựa trên môi trường như local, development, production, v.v.
+
+
+ Kịch Bản Kiểm Thử Lần 1:
 Tên Kịch Bản: Kiểm thử cơ bản của 1 URL
 
 Mục Đích: Test khả năng hoạt động của URL và phần mềm Postman
@@ -19,7 +31,7 @@ Phương Thức HTTP (GET/POST/PUT/DELETE): GET
 
 URL: https://random-data-api.com/api/v2/
 
-Tham Số: users?size=2&is_xml=true
+Tham Số: users/6
 
 Kết Quả Mong Đợi: Gửi yêu cầu thành công
 
@@ -28,183 +40,85 @@ Kết Quả Thực Tế: Đã gửi yêu cầu thành công
 Trạng Thái: Thành công
 
 Kết quả sau khi kiểm thử:
+<img width="960" alt="Screenshot 2024-05-28 135738" src="https://github.com/KinBbi/Postmantest/assets/96899952/e8711284-4594-4dce-9e88-a2e3aa24865e">
 
-image1
 Kết quả kiểm thử chi tiết:
-
-[
-    {  
-    
-        "id": 9209,
-        "uid": "61b0ecef-a169-49c1-9b7e-616aebe82641",
-        "password": "zWosu2p6UN",
-        "first_name": "Davis",
-        "last_name": "Hand",
-        "username": "davis.hand",
-        "email": "davis.hand@email.com",
-        "avatar": "https://robohash.org/corruptiutrepudiandae.png?size=300x300&set=set1",
-        "gender": "Genderfluid",
-        "phone_number": "+223 522.344.8113",
-        "social_insurance_number": "625916069",
-        "date_of_birth": "1978-03-23",
-        "employment": {
-            "title": "Sales Consultant",
-            "key_skill": "Problem solving"
-        },
-        "address": {
-            "city": "Port Sid",
-            "street_name": "Shizuko Unions",
-            "street_address": "7042 Mei Union",
-            "zip_code": "56023-6796",
-            "state": "Texas",
-            "country": "United States",
-            "coordinates": {
-                "lat": 29.124815080601806,
-                "lng": -52.01789697476312
-            }
-        },
-        "credit_card": {
-            "cc_number": "6771-8982-4885-7139"
-        },
-        "subscription": {
-            "plan": "Premium",
-            "status": "Active",
-            "payment_method": "Money transfer",
-            "term": "Monthly"
+{
+    "id": 3804,
+    "uid": "7bfcde34-ac59-44d5-aaf5-2cd082853b6c",
+    "password": "kC0WOzV35D",
+    "first_name": "Timothy",
+    "last_name": "Hermann",
+    "username": "timothy.hermann",
+    "email": "timothy.hermann@email.com",
+    "avatar": "https://robohash.org/errorautlaboriosam.png?size=300x300&set=set1",
+    "gender": "Male",
+    "phone_number": "+687 (192) 996-0723 x2080",
+    "social_insurance_number": "494044985",
+    "date_of_birth": "1967-02-16",
+    "employment": {
+        "title": "Lead Mining Director",
+        "key_skill": "Technical savvy"
+    },
+    "address": {
+        "city": "New Loganport",
+        "street_name": "Lee Pike",
+        "street_address": "1950 Merrilee Pines",
+        "zip_code": "94931-6151",
+        "state": "New York",
+        "country": "United States",
+        "coordinates": {
+            "lat": -52.963237680833686,
+            "lng": 97.9205084281989
         }
     },
-    {
-        "id": 4506,
-        "uid": "1f8ef347-e420-4e50-8b66-8cf92ab6ad74",
-        "password": "RQpDo89cFw",
-        "first_name": "Trent",
-        "last_name": "Quitzon",
-        "username": "trent.quitzon",
-        "email": "trent.quitzon@email.com",
-        "avatar": "https://robohash.org/quibusdamautquisquam.png?size=300x300&set=set1",
-        "gender": "Genderqueer",
-        "phone_number": "+675 (698) 414-6258 x469",
-        "social_insurance_number": "193053717",
-        "date_of_birth": "1999-03-10",
-        "employment": {
-            "title": "Legal Administrator",
-            "key_skill": "Leadership"
-        },
-        "address": {
-            "city": "Schroederchester",
-            "street_name": "Macejkovic Via",
-            "street_address": "5634 Tyron Ferry",
-            "zip_code": "75541",
-            "state": "Alabama",
-            "country": "United States",
-            "coordinates": {
-                "lat": 22.21205024489973,
-                "lng": 139.04500158922622
-            }
-        },
-        "credit_card": {
-            "cc_number": "4409687671791"
-        },
-        "subscription": {
-            "plan": "Starter",
-            "status": "Pending",
-            "payment_method": "Apple Pay",
-            "term": "Full subscription"
-        }
+    "credit_card": {
+        "cc_number": "4710921150025"
+    },
+    "subscription": {
+        "plan": "Bronze",
+        "status": "Active",
+        "payment_method": "Cheque",
+        "term": "Full subscription"
     }
-]
+}
+
 Kịch Bản Kiểm Thử Lần 2:
 Tên Kịch Bản: Kiểm thử cơ bản của một URL với một tham số
 
 Mục Đích: Test khả năng hoạt động của URL và phần mềm Postman
 
-Phương Thức HTTP (GET/POST/PUT/DELETE): GET
+Phương Thức HTTP (GET/POST/PUT/DELETE): GET    
 
 URL: https://random-data-api.com/api/v2/
 
-Tham Số: beerType=light
+Tham Số: beers?test=no
 
-Kết Quả Mong Đợi: Gửi yêu cầu thành công
+Kết Quả Mong Đợi: Gửi yêu cầu thành công 
 
-Kết Quả Thực Tế: Gửi yêu cầu thất bại
+Kết Quả Thực Tế: Gửi yêu cầu thành công
 
-Trạng Thái: Không thành công
+Trạng Thái: Thành công
 
 Kết quả sau khi kiểm thử:
+<img width="960" alt="Screenshot 2024-05-28 142434" src="https://github.com/KinBbi/Postmantest/assets/96899952/97170967-687d-4249-9632-626dc621c494">
 
-image2
 Kết quả kiểm thử chi tiết:
+{
+    "id": 9493,
+    "uid": "3218d901-5d4c-4db1-a6a0-b76dc73bed76",
+    "brand": "Delirium",
+    "name": "Founders Kentucky Breakfast",
+    "style": "Light Hybrid Beer",
+    "hop": "Summit",
+    "yeast": "5335 - Lactobacillus",
+    "malts": "Pale",
+    "ibu": "91 IBU",
+    "alcohol": "7.5%",
+    "blg": "14.0°Blg"
+}
 
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <title>The page you were looking for doesn't exist (404)</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <style>
-        .rails-default-error-page {
-            background-color: #EFEFEF;
-            color: #2E2F30;
-            text-align: center;
-            font-family: arial, sans-serif;
-            margin: 0;
-        }
-        
-        .rails-default-error-page div.dialog {
-            width: 95%;
-            max-width: 33em;
-            margin: 4em auto 0;
-        }
-
-        .rails-default-error-page div.dialog>div {
-            border: 1px solid #CCC;
-            border-right-color: #999;
-            border-left-color: #999;
-            border-bottom-color: #BBB;
-            border-top: #B00100 solid 4px;
-            border-top-left-radius: 9px;
-            border-top-right-radius: 9px;
-            background-color: white;
-            padding: 7px 12% 0;
-            box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-        }
-
-        .rails-default-error-page h1 {
-            font-size: 100%;
-            color: #730E15;
-            line-height: 1.5em;
-        }
-
-        .rails-default-error-page div.dialog>p {
-            margin: 0 0 1em;
-            padding: 1em;
-            background-color: #F7F7F7;
-            border: 1px solid #CCC;
-            border-right-color: #999;
-            border-left-color: #999;
-            border-bottom-color: #999;
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-            border-top-color: #DADADA;
-            color: #666;
-            box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-        }
-    </style>
-</head>
-<body class="rails-default-error-page">
-    <!-- This file lives in public/404.html -->
-    <div class="dialog">
-        <div>
-            <h1>The page you were looking for doesn't exist.</h1>
-            <p>You may have mistyped the address or the page may have moved.</p>
-        </div>
-        <p>If you are the application owner check the logs for more information.</p>
-    </div>
-</body>
-
-</html>
-Kịch Bản Kiểm Thử Lần 1:
+Kịch Bản Kiểm Thử Lần 3:
 Tên Kịch Bản: Kiểm thử cơ bản của 1 URL với một tham số truyền vào
 
 Mục Đích: Test khả năng hoạt động của URL và phần mềm Postman
@@ -213,7 +127,7 @@ Phương Thức HTTP (GET/POST/PUT/DELETE): GET
 
 URL: https://random-data-api.com/api/v2/
 
-Tham Số: beerType=light
+Tham Số: addresses
 
 Kết Quả Mong Đợi: Gửi yêu cầu thành công
 
@@ -222,39 +136,90 @@ Kết Quả Thực Tế: Đã gửi yêu cầu thành công
 Trạng Thái: Thành công
 
 Kết quả sau khi kiểm thử:
+<img width="960" alt="Screenshot 2024-05-28 142827" src="https://github.com/KinBbi/Postmantest/assets/96899952/1080c343-2079-4fcd-83c1-dc78a5711eea">
 
-image3
 Kết quả kiểm thử chi tiết:
+{
+    "id": 9765,
+    "uid": "4120ffd3-88e4-45c2-9ef6-dd6a8551de22",
+    "city": "Port Weston",
+    "street_name": "Turner Cove",
+    "street_address": "172 Anton Crest",
+    "secondary_address": "Apt. 635",
+    "building_number": "59841",
+    "mail_box": "PO Box 77",
+    "community": "University Village",
+    "zip_code": "79475",
+    "zip": "50157",
+    "postcode": "68758-1492",
+    "time_zone": "Europe/London",
+    "street_suffix": "Light",
+    "city_suffix": "mouth",
+    "city_prefix": "Lake",
+    "state": "New Mexico",
+    "state_abbr": "ME",
+    "country": "French Guiana",
+    "country_code": "SS",
+    "latitude": 56.09197067676752,
+    "longitude": 54.507929858395784,
+    "full_address": "Suite 521 98889 Koss Harbors, Dainestad, OR 50924-7247"
+}
 
-    {
-        "id": 4908,
-        "uid": "16d508f9-8757-491d-b8c9-4b980932f637",
-        "brand": "Leffe",
-        "name": "Sapporo Premium",
-        "style": "Strong Ale",
-        "hop": "Newport",
-        "yeast": "1098 - British Ale",
-        "malts": "Roasted barley",
-        "ibu": "82 IBU",
-        "alcohol": "2.1%",
-        "blg": "12.8°Blg"
-    }
+
+Kịch Bản Kiểm Thử Lần 4:
+Tên Kịch Bản: Kiểm thử cơ bản của 1 URL với một tham số truyền vào
+
+Mục Đích: Test khả năng hoạt động của URL và phần mềm Postman
+
+Phương Thức HTTP (GET/POST/PUT/DELETE): GET
+
+URL: https://random-data-api.com/api/v2/
+
+Tham Số: HoangAnh=HA
+
+Kết Quả Mong Đợi: Gửi yêu cầu thành công
+
+Kết Quả Thực Tế: Đã gửi yêu cầu thành công
+
+Trạng Thái: Thành công
+
+Kết quả sau khi kiểm thử:
+<img width="960" alt="Screenshot 2024-05-28 143100" src="https://github.com/KinBbi/Postmantest/assets/96899952/475184ac-f7a9-407c-bc89-f416e670271c">
+
+Kết quả kiểm thử chi tiết:
+{
+    "id": 5,
+    "uid": "28122d50-0bf1-4770-98dc-ff1cbcc8f2de",
+    "city": "East Marcosview",
+    "street_name": "Fritsch Trafficway",
+    "street_address": "605 Jim Row",
+    "secondary_address": "Apt. 987",
+    "building_number": "2094",
+    "mail_box": "PO Box 252",
+    "community": "Summer Court",
+    "zip_code": "38540",
+    "zip": "82474-4479",
+    "postcode": "31738-4486",
+    "time_zone": "Asia/Kuwait",
+    "street_suffix": "Curve",
+    "city_suffix": "fort",
+    "city_prefix": "South",
+    "state": "New Hampshire",
+    "state_abbr": "MA",
+    "country": "United Arab Emirates",
+    "country_code": "MA",
+    "latitude": -62.77801241564397,
+    "longitude": -167.63046676170717,
+    "full_address": "Suite 866 80050 Barbra Course, New Hoseafort, IA 88500-9434"
+}
+
 5. Kết Quả Kiểm Thử: Tóm tắt kết quả kiểm thử, bao gồm số lượng kịch bản kiểm thử đã chạy, số lượng thành công, số lượng thất bại, và tỷ lệ thành công.
 
-Số lượng kịch bản đã kiểm thử: 3
+Số lượng kịch bản đã kiểm thử: 4
 
-Số lần thành công: 2
+Số lần thành công: 4
 
-Số lần thất bại: 1
+Số lần thất bại: 0
 
-Tỉ lệ thành công: 75%
+Tỉ lệ thành công: 100%
 
-6. Phát Hiện Lỗi: Chi tiết về lỗi, bao gồm:
-
-ID Lỗi: 404 Not Found
-
-Mô Tả Lỗi: Trang bạn đang tìm kiếm không tồn tại (404)
-
-Mức Độ Ảnh Hưởng: Không
-
-Ghi Chú/Đề Xuất: Sai URL và tham số
