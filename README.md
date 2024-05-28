@@ -1,17 +1,19 @@
-BÁO CÁO KIỂM THỬ API
+ <h1>BÁO CÁO KIỂM THỬ API</h1>
 
-Ngày Kiểm Thử: 28/05/2024
+**Ngày Kiểm Thử:** 28/05/2024
 
-Người Kiểm Thử: Nguyễn Ngọc Hoàng Anh
+**Người Kiểm Thử:** Nguyễn Ngọc Hoàng Anh
 
-Mục Tiêu Kiểm Thử: Sử dụng Postman để kiểm thử một API thực tế
+**Mục Tiêu Kiểm Thử:** Sử dụng Postman để kiểm thử một API thực tế
 
-Môi Trường Kiểm Thử: Postman.
+**Môi Trường Kiểm Thử:** Postman.
 
-Phương Pháp Kiểm Thử: Kiểm thử tự động và thủ công trên phần mềm Postman.
+**Phương Pháp Kiểm Thử:** Kiểm thử tự động và thủ công trên phần mềm Postman.
 
-Giới thiệu Postman
-Postman là một công cụ phát triển API và kiểm thử API rất phổ biến. Nó cung cấp một giao diện đồ họa dễ sử dụng cho phép bạn tạo, gửi và kiểm tra các yêu cầu HTTP đối với các API.
+**Giới thiệu Postman**
+
+
+  Postman là một công cụ phát triển API và kiểm thử API rất phổ biến. Nó cung cấp một giao diện đồ họa dễ sử dụng cho phép bạn tạo, gửi và kiểm tra các yêu cầu HTTP đối với các API.
 Các tính năng chính của Postman?
 Các tính năng chính của Postman bao gồm: +) Tạo yêu cầu HTTP: Postman cho phép bạn tạo các yêu cầu HTTP như GET, POST, PUT, DELETE và nhiều hơn nữa. Bạn có thể chỉ định các thông số như URL, tham số, tiêu đề, thân yêu cầu và xem các kết quả trả về. +) Quản lý môi trường: Bạn có thể quản lý các biến môi trường để tùy chỉnh các yêu cầu và phản hồi dựa trên các biến này. Điều này rất hữu ích khi bạn phải làm việc với nhiều môi trường như local, development, production, v.v. +) Tạo và chia sẻ bộ sưu tập (collection): Postman cho phép bạn tạo và tổ chức các yêu cầu vào các bộ sưu tập. Bạn có thể chia sẻ bộ sưu tập này với đồng đội hoặc cộng đồng để hỗ trợ cộng tác và tái sử dụng. +) Kiểm thử và xác thực: Postman cung cấp các công cụ để kiểm thử và xác thực API. Bạn có thể thực hiện các bài kiểm tra tự động, kiểm tra mô phỏng và kiểm tra hiệu năng để đảm bảo tính ổn định và chính xác của API.
 Cách cài đặt và sử dụng Postman?
@@ -21,6 +23,7 @@ Tạo yêu cầu: Bạn có thể tạo yêu cầu bằng cách chọn phương 
 Kiểm tra yêu cầu: Sau khi tạo yêu cầu, bạn có thể gửi yêu cầu và xem kết quả trả về từ API. Postman hiển thị các phản hồi trong cửa sổ "Response" và cho phép bạn xem thông tin chi tiết như mã trạng thái, tiêu đề và thân phản hồi.
 Quản lý môi trường: Bạn có thể tạo các biến môi trường và sử dụng chúng trong yêu cầu. Điều này giúp bạn tùy chỉnh các yêu cầu dựa trên môi trường như local, development, production, v.v.
 
+**Kiểm thử**
 
  Kịch Bản Kiểm Thử Lần 1:
 Tên Kịch Bản: Kiểm thử cơ bản của 1 URL
@@ -44,6 +47,7 @@ Kết quả sau khi kiểm thử:
 
 Kết quả kiểm thử chi tiết:
 {
+
     "id": 3804,
     "uid": "7bfcde34-ac59-44d5-aaf5-2cd082853b6c",
     "password": "kC0WOzV35D",
@@ -105,6 +109,7 @@ Kết quả sau khi kiểm thử:
 
 Kết quả kiểm thử chi tiết:
 {
+
     "id": 9493,
     "uid": "3218d901-5d4c-4db1-a6a0-b76dc73bed76",
     "brand": "Delirium",
@@ -140,6 +145,7 @@ Kết quả sau khi kiểm thử:
 
 Kết quả kiểm thử chi tiết:
 {
+
     "id": 9765,
     "uid": "4120ffd3-88e4-45c2-9ef6-dd6a8551de22",
     "city": "Port Weston",
@@ -188,6 +194,7 @@ Kết quả sau khi kiểm thử:
 
 Kết quả kiểm thử chi tiết:
 {
+
     "id": 5,
     "uid": "28122d50-0bf1-4770-98dc-ff1cbcc8f2de",
     "city": "East Marcosview",
